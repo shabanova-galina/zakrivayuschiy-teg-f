@@ -1,1 +1,18 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+  /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-family-main: 'Inter', 'Arial', sans-serif;
+    --font-family-accent: 'Press Start 2P';
+    --wght-card-text: 410;
+    --wght-card-title: 715;
+    --background-image-main: 
+        repeating-linear-gradient(to right, #d3d3d3 0px,#d3d3d3 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0px,#d3d3d3 2px, transparent 2px, transparent 4px),
+        linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --width-main: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --color_stroke: #fff;
+    --color_text_hover: #fff;
+    --color-animation-fill: #FF0000;
+    --color-contour: black;
+}
+
+
