@@ -16,7 +16,10 @@
   font-variation-settings: 'wght' var(--wght-card-text);
   background-image: var(--background-image-main);
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
@@ -133,6 +136,7 @@
   box-sizing: border-box;
   transition: box-shadow 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .button__text {
@@ -175,8 +179,6 @@
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   box-sizing: border-box;
   padding: 32px 32px;
-  box-sizing: border-box;
-  border: none;
   background-color: #FFF;
   border: solid 2px #000;
   display: flex;
@@ -230,6 +232,9 @@ body:has(.popup[open]) {
     all: unset;
     block-size: 21px;
     inline-size: 21px;
+    position: relative;
+    mix-blend-mode: difference;
+    color: var(--color_text_hover);
   }
 
 @media (350px <= width <= 375px) {
@@ -269,12 +274,6 @@ body:has(.popup[open]) {
   }
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 #000;
@@ -301,12 +300,8 @@ body:has(.popup[open]) {
   border-color: #000;
 }
 
-.card__icon-button:focus{
+.card__icon-button:focus {
   outline: none;
-}
-
-.button {
-  overflow: hidden;
 }
 
 .button::before {
@@ -318,24 +313,12 @@ body:has(.popup[open]) {
   height: 100%;
   background-color:#000;
   transform: scaleX(0);
-  transition: transform 0.5s ease-in-out; 
+  transition: transform 0.5s ease-in-out;
   transform-origin: left center;
-}
-
-.button__text {
-  position: relative;
-  mix-blend-mode: difference;
-  color: var(--color_text_hover);
 }
 
 .button:hover::before {
   transform: scaleX(1);
-}
-
-.floppy {
-  position: relative;
-  mix-blend-mode: difference;
-  color: var(--color_text_hover);
 }
 
 .sparks {
@@ -347,7 +330,7 @@ body:has(.popup[open]) {
 }
 
 .core {
-  transition: fill linear 0.3s; 
+  transition: fill linear 0.3s;
   transition-delay: 0.03s;
 }
 
