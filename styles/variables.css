@@ -1,6 +1,6 @@
   /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font-family-main: 'Inter', 'Arial', sans-serif;
+    --font-family-main: 'Inter';
     --font-family-accent: 'Press Start 2P';
     --wght-card-text: 410;
     --wght-card-title: 715;
